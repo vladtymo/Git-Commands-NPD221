@@ -32,6 +32,7 @@
             label1 = new Label();
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -66,11 +67,22 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Location = new Point(473, 1135);
+            button1.Name = "button1";
+            button1.Size = new Size(289, 59);
+            button1.TabIndex = 3;
+            button1.Text = "Read More";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // CommitForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1231, 1147);
+            ClientSize = new Size(1231, 1246);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -86,5 +98,6 @@
         private Label label1;
         private TextBox textBox1;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }
