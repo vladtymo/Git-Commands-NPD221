@@ -13,5 +13,11 @@ namespace GitCommands
             commitForm.Show();
             //commitForm.ShowDialog();
         }
+
+        private void button_Click_Branch(object sender, EventArgs e)
+        {
+            BranchForm branchForm = new BranchForm();
+            branchForm.Show();
+        }
     }
 }
