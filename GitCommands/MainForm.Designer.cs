@@ -28,58 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 32F, FontStyle.Bold);
-            label1.Location = new Point(219, 50);
+            label1.Location = new Point(-5, 9);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(731, 114);
+            label1.Size = new Size(226, 59);
             label1.TabIndex = 0;
-            label1.Text = "GIT COMMANDS";
+            label1.Text = "Git merge";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(77, 294);
+            label2.Location = new Point(41, 138);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(0, 32);
+            label2.Size = new Size(0, 15);
             label2.TabIndex = 1;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(249, 180);
+            label3.Font = new Font("Segoe UI", 8F);
+            label3.Location = new Point(225, 41);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(580, 32);
+            label3.Size = new Size(624, 533);
             label3.TabIndex = 2;
-            label3.Text = "You can read a command descripti by clicking button";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(67, 315);
-            button1.Name = "button1";
-            button1.Size = new Size(221, 61);
-            button1.TabIndex = 3;
-            button1.Text = "commit";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            label3.Text = resources.GetString("label3.Text");
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1198, 729);
-            Controls.Add(button1);
+            ClientSize = new Size(999, 611);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "MainForm";
             Text = "Form1";
             ResumeLayout(false);
@@ -91,6 +85,5 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button button1;
     }
 }
