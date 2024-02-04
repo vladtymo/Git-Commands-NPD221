@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace GitCommands
 {
-    public partial class LogFrom : Form
+    public partial class LogForm : Form
     {
-        public LogFrom()
+        public LogForm()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LogMainForm LogForm = new LogMainForm();
+            LogForm.ShowDialog();
         }
     }
 }

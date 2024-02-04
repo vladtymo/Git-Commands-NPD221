@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GitCommands
 {
-    public partial class CommitForm : Form
+    public partial class LogMainForm : Form
     {
-        public CommitForm()
+        public LogMainForm()
         {
             InitializeComponent();
         }
