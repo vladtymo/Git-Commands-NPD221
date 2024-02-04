@@ -13,5 +13,11 @@ namespace GitCommands
             commitForm.Show();
             //commitForm.ShowDialog();
         }
+
+        private void buttonCheckout_Click(object sender, EventArgs e)
+        {
+            CommitCheckoutForms commitCheckoutForms = new CommitCheckoutForms();
+            commitCheckoutForms.ShowDialog();
+        }
     }
 }
