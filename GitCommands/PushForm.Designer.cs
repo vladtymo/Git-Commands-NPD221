@@ -1,6 +1,6 @@
 ﻿namespace GitCommands
 {
-    partial class CommitForm
+    partial class PushForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,58 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CommitForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PushForm));
             label1 = new Label();
-            textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
+            textBox1 = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 22F);
-            label1.Location = new Point(93, 29);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(332, 38);
             label1.Name = "label1";
-            label1.Size = new Size(443, 41);
+            label1.Size = new Size(146, 23);
             label1.TabIndex = 0;
-            label1.Text = "Commit Commands Description";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(22, 111);
-            textBox1.Margin = new Padding(2, 1, 2, 1);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.ScrollBars = ScrollBars.Vertical;
-            textBox1.Size = new Size(615, 125);
-            textBox1.TabIndex = 1;
-            textBox1.Text = resources.GetString("textBox1.Text");
+            label1.Text = "PUSH COMAND";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(22, 246);
-            pictureBox1.Margin = new Padding(2, 1, 2, 1);
+            pictureBox1.Image = Properties.Resources.p;
+            pictureBox1.Location = new Point(241, 376);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(613, 270);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
+            pictureBox1.Size = new Size(305, 181);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // CommitForm
+            // textBox1
+            // 
+            textBox1.Location = new Point(78, 92);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(643, 269);
+            textBox1.TabIndex = 2;
+            textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // button1
+            // 
+            button1.Location = new Point(323, 588);
+            button1.Name = "button1";
+            button1.Size = new Size(118, 23);
+            button1.TabIndex = 3;
+            button1.Text = "ReadMore";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // PushForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(703, 622);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(801, 659);
+            Controls.Add(button1);
             Controls.Add(textBox1);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Margin = new Padding(2, 1, 2, 1);
-            Name = "CommitForm";
-            Text = "CommitForm";
+            Name = "PushForm";
+            Text = "PushForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -88,7 +94,8 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
         private PictureBox pictureBox1;
+        private TextBox textBox1;
+        private Button button1;
     }
 }
