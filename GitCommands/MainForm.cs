@@ -19,5 +19,11 @@ namespace GitCommands
             CommitCheckoutForms commitCheckoutForms = new CommitCheckoutForms();
             commitCheckoutForms.ShowDialog();
         }
+
+        private void mergeBtn_Click(object sender, EventArgs e)
+        {
+            MergeForm mergeForm = new MergeForm();
+            mergeForm.Show();
+        }
     }
 }
