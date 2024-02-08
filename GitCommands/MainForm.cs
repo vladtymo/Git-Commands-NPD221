@@ -19,5 +19,11 @@ namespace GitCommands
             CommitCheckoutForms commitCheckoutForms = new CommitCheckoutForms();
             commitCheckoutForms.ShowDialog();
         }
+
+        private void TagBtn_Click(object sender, EventArgs e)
+        {
+            TagForm tagForm = new TagForm();
+            tagForm.Show();
+        }
     }
 }
