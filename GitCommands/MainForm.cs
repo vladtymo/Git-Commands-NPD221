@@ -19,5 +19,11 @@ namespace GitCommands
             CommitCheckoutForms commitCheckoutForms = new CommitCheckoutForms();
             commitCheckoutForms.ShowDialog();
         }
+
+        private void button_reset_Click(object sender, EventArgs e)
+        {
+            ResetForm resetForm = new ResetForm();
+            resetForm.Show();
+        }
     }
 }
