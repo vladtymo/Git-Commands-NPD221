@@ -19,5 +19,11 @@ namespace GitCommands
             CommitCheckoutForms commitCheckoutForms = new CommitCheckoutForms();
             commitCheckoutForms.ShowDialog();
         }
+
+        private void status_btn_Click(object sender, EventArgs e)
+        {
+            GitStatus gitStatus = new GitStatus();
+            gitStatus.ShowDialog();
+        }
     }
 }
